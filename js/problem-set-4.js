@@ -93,11 +93,11 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  let miles = Math.floor("inches"/63360);
-  let yards = Math.floor();
-  let feet = Math.floor();
-  let inches = Math.floor();
-  document.getElementById("output5").innerHTML = ;
+  let miles = Math.floor(inches/63360);
+  let yards = Math.floor((inches/36) % 1760);
+  let feet = Math.floor((inches/12) % 3);
+  let inch2 = Math.floor(inches % 12);
+  document.getElementById("output5").innerHTML = ("Miles: " +  miles + "<br\>" + "Yards: " + yards + "<br\>" + "Feet: " + feet + "<br\>" + "Inches: " + inch2);
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
